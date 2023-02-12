@@ -10,7 +10,6 @@
 		9BFE9DB2299968F400535717 /* Browsr_Lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFE9DB1299968F400535717 /* Browsr_Lib.swift */; };
 		9BFE9DB92999694300535717 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFE9DB82999694300535717 /* Endpoint.swift */; };
 		9BFE9DBB2999699B00535717 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFE9DBA2999699B00535717 /* Request.swift */; };
-		9BFE9DBD29996A1F00535717 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFE9DBC29996A1F00535717 /* API.swift */; };
 		9BFE9DBF29996FB400535717 /* OrganizationsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFE9DBE29996FB400535717 /* OrganizationsEndpoint.swift */; };
 		9BFE9DC1299970EE00535717 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFE9DC0299970EE00535717 /* Organization.swift */; };
 		9BFE9DC32999721700535717 /* OrganizationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFE9DC22999721700535717 /* OrganizationsRequest.swift */; };
@@ -33,7 +32,6 @@
 		9BFE9DB1299968F400535717 /* Browsr_Lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browsr_Lib.swift; sourceTree = "<group>"; };
 		9BFE9DB82999694300535717 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		9BFE9DBA2999699B00535717 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		9BFE9DBC29996A1F00535717 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		9BFE9DBE29996FB400535717 /* OrganizationsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsEndpoint.swift; sourceTree = "<group>"; };
 		9BFE9DC0299970EE00535717 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		9BFE9DC22999721700535717 /* OrganizationsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsRequest.swift; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				9BFE9DB1299968F400535717 /* Browsr_Lib.swift */,
 				9BFE9DB82999694300535717 /* Endpoint.swift */,
 				9BFE9DBA2999699B00535717 /* Request.swift */,
-				9BFE9DBC29996A1F00535717 /* API.swift */,
 				9BFE9DBE29996FB400535717 /* OrganizationsEndpoint.swift */,
 				9BFE9DC0299970EE00535717 /* Organization.swift */,
 				9BFE9DC22999721700535717 /* OrganizationsRequest.swift */,
@@ -142,7 +139,6 @@
 				9BFE9DB92999694300535717 /* Endpoint.swift in Sources */,
 				9BFE9DBB2999699B00535717 /* Request.swift in Sources */,
 				9BFE9DBF29996FB400535717 /* OrganizationsEndpoint.swift in Sources */,
-				9BFE9DBD29996A1F00535717 /* API.swift in Sources */,
 				9BFE9DC1299970EE00535717 /* Organization.swift in Sources */,
 				9BFE9DB2299968F400535717 /* Browsr_Lib.swift in Sources */,
 			);

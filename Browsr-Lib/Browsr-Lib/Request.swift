@@ -7,14 +7,14 @@
 
 import Foundation
 
-protocol Request {
+public protocol Request {
     associatedtype E: Endpoint
     
     var endpoint: E { get }
     var headers: [String: String] { get }
 }
 
-extension Request {
+public extension Request {
     var headers: [String: String] {
         ["Content-Type": "application/json"]
     }

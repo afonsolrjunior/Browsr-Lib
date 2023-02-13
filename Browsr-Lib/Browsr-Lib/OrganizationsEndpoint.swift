@@ -7,20 +7,23 @@
 
 import Foundation
 
-enum OrganizationsEndpoint: Endpoint {
-    case organizations
+public enum OrganizationsEndpoint: Endpoint {
+    case organizations(nextPagePath: String? = nil)
     case search(name: String)
     
-    var baseURL: String {
+    public var baseURL: String {
         switch self {
             default:
                 return "api.github.com"
         }
     }
     
-    var path: String {
+    public var path: String {
         switch self {
-            case .organizations:
+            case .organizations(let nextPagePath):
+                if let nextPagePath {
+                    return "/organizations\(nextPagePath)"
+                }
                 return "/organizations"
             case .search(let name):
                 return "/orgs/\(name)"

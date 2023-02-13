@@ -7,19 +7,19 @@
 
 import Foundation
 
-internal enum EndpointScheme: String {
+public enum EndpointScheme: String {
     case http
     case https
 }
 
-internal enum RESTMethod: String {
+public enum RESTMethod: String {
     case get = "GET"
     case post = "POST"
     case put = "PUT"
     case delete = "DELETE"
 }
 
-internal protocol Endpoint {
+public protocol Endpoint {
     var scheme: EndpointScheme { get }
     var baseURL: String { get }
     var path: String { get }
@@ -27,7 +27,7 @@ internal protocol Endpoint {
     var components: URLComponents { get }
 }
 
-internal extension Endpoint {
+public extension Endpoint {
     var components: URLComponents {
         var components = URLComponents()
         

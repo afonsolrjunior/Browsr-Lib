@@ -7,6 +7,11 @@
 
 import Foundation
 
-struct OrganizationsRequest: Request {
-    let endpoint: OrganizationsEndpoint
+public struct OrganizationsRequest: Request {
+    public let endpoint: OrganizationsEndpoint
+    
+    public init(endpoint: OrganizationsEndpoint) {
+        self.endpoint = endpoint
+    }
+    
 }

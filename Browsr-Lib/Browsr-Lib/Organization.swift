@@ -8,13 +8,13 @@
 import Foundation
 
 public struct OrganizationsPagedResponse {
-    let results: [Organization]
-    let nextPageUrl: String
+    public let results: [Organization]
+    public let nextPageUrl: String
 }
 
 public struct Organization: Decodable {
-    let name: String
-    let avatarUrlString: String
+    public let name: String
+    public let avatarUrlString: String
     
     enum CodingKeys: String, CodingKey {
         case name = "login"

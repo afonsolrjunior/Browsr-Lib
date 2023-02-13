@@ -24,6 +24,7 @@ public protocol Endpoint {
     var baseURL: String { get }
     var path: String { get }
     var method: RESTMethod { get }
+    var queryString: String? { get }
     var components: URLComponents { get }
 }
 
@@ -34,6 +35,9 @@ public extension Endpoint {
         components.scheme = self.scheme.rawValue
         components.host = self.baseURL
         components.path = self.path
+        if let queryString {
+            components.query = queryString
+        }
         
         return components
     }

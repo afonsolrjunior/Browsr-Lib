@@ -16,6 +16,6 @@ public protocol Request {
 
 public extension Request {
     var headers: [String: String] {
-        ["Content-Type": "application/json"]
+        ["Content-Type": "application/json", "Authorization": "Bearer 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"]
     }
 }

@@ -20,13 +20,22 @@ public enum OrganizationsEndpoint: Endpoint {
     
     public var path: String {
         switch self {
-            case .organizations(let nextPagePath):
-                if let nextPagePath {
-                    return "/organizations\(nextPagePath)"
-                }
+            case .organizations:
                 return "/organizations"
             case .search(let name):
                 return "/orgs/\(name)"
+        }
+    }
+    
+    public var queryString: String? {
+        switch self {
+            case .organizations(let nextPagePath):
+                if let nextPagePath {
+                    return nextPagePath
+                }
+                return nil
+            case .search:
+                return nil
         }
     }
     
